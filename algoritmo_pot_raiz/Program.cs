@@ -6,7 +6,7 @@
         //la raiz cudrada y con el tercero hallar la raiz cubica. Mostrar en pantalla los tres resultados en pantalla.
         int num1,num2,num3;
         double cuad, raiz, racub;
-      
+        Console.WriteLine("Numeros positivos");
         Console.WriteLine("Digite el primer numero");
         num1 = Convert.ToInt32(Console.ReadLine());
 

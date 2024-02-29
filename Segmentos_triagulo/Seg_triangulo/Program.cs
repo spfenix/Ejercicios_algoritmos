@@ -4,7 +4,7 @@
 
     {//Lea la longitud de tres segmentos y que muestre si se puede construir un triángulo con estos segmentos
         double mayor, seg2, seg3,suma;
-        string mensaje = "Se puede construir el triangulo";
+        string mensaje = "se puede construir el triangulo";
 
         Console.Write("Digita de los tres segmentos del triangulo, el mayor de ellos: ");
         mayor = double.Parse(Console.ReadLine());

@@ -16,34 +16,40 @@ public class Program
         Console.Write("Digite el tercer numero: ");
         num3 = double.Parse(Console.ReadLine());
 
-        if ((num1 > num2) && (num1 > num2))
+        if ((num1 > num2) && (num1 > num3))
         {
             Console.WriteLine("El numero mayor es: " + num1);
 
         }
 
         else
-            if ((num2 > num1) && (num2 > num3))
-        {
-            Console.WriteLine("El numero mayor es: " + num2);
-       
-        
-        
-        
-        }
-
-            else
+        { if ((num2 > num1) && (num2 > num3))Console.WriteLine("El numero mayor es: " + num2);
+          else
             {
-            Console.WriteLine("El numero mayor es: " + num3);
-
-
+                if ((num2 > num1) && (num2 > num3)) Console.WriteLine("El numero mayor es: " + num2);
+                else Console.WriteLine("El numero mayor es: " + num3);
             }
 
-        
-        
+
+
+
+           
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
     }
- }
-  
+    }   }
         
       
              

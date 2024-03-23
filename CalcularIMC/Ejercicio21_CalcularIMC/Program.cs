@@ -18,7 +18,7 @@ public class Program
         {
             Console.Write("Ingrese el numero de pacientes para evaluar su IMC: ");
             numpac = int.Parse(Console.ReadLine());
-            for (int i = 1; i < numpac; i++)
+            for (int i = 1; i <= numpac; i++)
             {
                 Console.Write("Por favor digite el peso en kilogramos: ");
                 masa = int.Parse(Console.ReadLine());
@@ -26,12 +26,13 @@ public class Program
                 altura = double.Parse(Console.ReadLine());
 
                 imc = masa / (altura * altura);
-                if (imc < 18.5) Console.Write("Tiene peso insuficiente");
-                if ((imc >= 18.5) && (imc <= 24.9)) Console.Write("Se encuentra en la categoria de peso saludable");
-                if ((imc >= 25.0) && (imc <= 29.9)) Console.Write("Tiene sobrepeso");
+
+                if (imc < 18.5) Console.Write("Tiene peso insuficiente\n");
+                if ((imc >= 18.5) && (imc <= 24.9)) Console.Write("Se encuentra en la categoria de peso saludable\n");
+                if ((imc >= 25.0) && (imc <= 29.9)) Console.Write("Tiene sobrepeso\n");
                 if (imc > 29.9) Console.Write("Tiene obesidad");
             }
-            Console.Write("Digite 1 para seguir evaluando o 0 para terminar: ");
+            Console.Write("Digite 1 para seguir evaluando o 0 para terminar\n: ");
             opt = int.Parse(Console.ReadLine());
 
             if (opt == 0) validador = false;
